@@ -1,0 +1,32 @@
+#root {
+    box-shadow: 0 0 010px rgba(0, 0, 0, 0.8);
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    background-color: #4a69ae;
+    background-image:url("./assets/fondo.jpg");
+}
+
+#foto{
+    height: 25%;
+    width: 25%;
+    border-radius: 80px;
+    position: absolute;
+    left: 227px;
+    top: 40px;
+    box-shadow: 0 0 010px rgba(0, 0, 0, 0.8);
+}
+
+.redes {
+    float: left;
+    width: 8%;
+ 
+    margin: 16px;
+    border-radius: 31px;
+    height: 48px;
+    position: relative;
+    left: 176px;
+    top: 410px;
+}

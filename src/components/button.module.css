@@ -1,0 +1,17 @@
+.button {
+    background-color: rgb(21, 174, 221);
+    color: whitesmoke;
+    padding: 5px 20px;
+    border: solid whitesmoke;
+    font-size: large;
+    border-radius: 20px;
+        position: absolute;
+    left: 228px;
+    top: 530px;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: solid black;
+}
