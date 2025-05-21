@@ -4,6 +4,6 @@ export function Botton({func, text}){
 
 
     return(
-        <button className={styles.button} onClick={func}>{!text? "perfil" :" Habilidades"}</button>
+        <button className={styles.button} onClick={func}>{text}</button>
     )
 }

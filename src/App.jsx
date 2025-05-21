@@ -1,6 +1,6 @@
 
 import './App.css'
-import { lazy, useState } from 'react'
+import { useState } from 'react'
 import { Botton } from './components/Botton.jsx'
 import images from './assets/images.jsx'
 
@@ -15,7 +15,6 @@ function App() {
     {skil: "Desarrollador Web"},
     {skil: "Desarrollador Full Stack"},
     {skil: "Soy Batman"}
-
 
   ]
 
@@ -36,6 +35,7 @@ function App() {
       <a href="https://github.com/" target='_blank'><img className='redes' src={images.image3} alt="github" /></a>
       <a href="https://www.linkedin.com/in/william-apache-desarrollador-web-fullstack/" target='_blank'><img className='redes' src={images.image4} alt="linkedin" /></a>
       
+      <Botton func={handleToggle} text={"perfil"}></Botton>
       </>
       
 
@@ -46,11 +46,7 @@ function App() {
     
     <h2 style={{fontStyle: 'italic', position: 'absolute', top: 30, left: 235,}}>Habilidades</h2>
 
-    <ul   style={{
-    fontStyle: 'italic',
-    position: 'absolute',
-    top: 110,
-    left: 10,
+    <ul   style={{fontStyle: 'italic',position: 'absolute',top: 110,eft: 10,
     fontSize: '1.2rem',      // Tamaño de letra más grande (ajustable)
     fontWeight: 'bold',      // Letra en negrilla    
     maxWidth: '500px'        // Para que no se extienda demasiado
@@ -64,12 +60,11 @@ function App() {
 
     
     </>)}
+    
 
-    <Botton text="habilidades" func={handleToggle}> {skills? "perfil" : "habilidades"}</Botton>
+    <Botton text={skills ? 'Perfil' : 'Habilidades'}  func={handleToggle}></Botton>
     </>
 
-
-   
 
 
   )
